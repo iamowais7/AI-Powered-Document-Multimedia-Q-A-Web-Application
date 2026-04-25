@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Env
+.env
+backend/.env
+
+# Uploads
+/tmp/uploads/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Docker
+*.log
