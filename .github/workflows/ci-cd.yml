@@ -128,7 +128,7 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-backend:latest
+          tags: ${{ env.REGISTRY }}/${{ github.repository_owner }}/docqa-backend:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -137,6 +137,6 @@ jobs:
         with:
           context: ./frontend
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-frontend:latest
+          tags: ${{ env.REGISTRY }}/${{ github.repository_owner }}/docqa-frontend:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
