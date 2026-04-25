@@ -57,10 +57,10 @@ jobs:
       - name: Run tests with coverage
         working-directory: backend
         env:
-          DATABASE_URL: sqlite+aiosqlite:///:memory:
-          REDIS_URL: redis://localhost:6379/0
-          OPENAI_API_KEY: sk-test-key
-          SECRET_KEY: test-secret-key
+          DATABASE_URL: "sqlite+aiosqlite:///:memory:"
+          REDIS_URL: "redis://localhost:6379/0"
+          OPENAI_API_KEY: "sk-test-key"
+          SECRET_KEY: "test-secret-key"
         run: |
           pytest --cov=app --cov-report=xml --cov-fail-under=95 -v
 
